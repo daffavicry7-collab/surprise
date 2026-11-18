@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#85005f">
+  <title>A Little Surprise for You</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <audio id="bgMusic" loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="sound-toggle" id="soundToggle" aria-label="Nyalakan atau matikan musik">♫</button>
+  <button class="more-button" id="moreButton" aria-label="Info">•••</button>
+
+  <main class="stage">
+
+    <!-- HALAMAN 1: AMPL0P -->
+    <section class="page active" id="page-envelope">
+      <div class="script-title">Aku ada sesuatu buat kamu</div>
+
+      <button class="envelope" id="openEnvelope" aria-label="Buka amplop">
+        <span class="flap"></span>
+        <span class="seal">♥</span>
+      </button>
+
+      <p class="hint">ketuk amplop</p>
+    </section>
+
+
+    <!-- HALAMAN 2: INTRO -->
+    
+<!-- HALAMAN 2: BIRTHDAY CAKE -->
+<section class="page" id="page-intro">
+
+  <div class="script-title">Happy Birthday ke17 Sayang</div>
+
+  <p class="cake-top-text">
+     ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡ ♡
+  </p>
+
+  <div class="cake-scene" id="cakeScene">
+
+  <div class="cake-glow"></div>
+
+  <div class="birthday-cake" id="birthdayCake">
+    <img src="assets/cake.png" alt="Memories">
+
+    <div class="magic-flames">
+      <span class="magic-flame"></span>
+      <span class="magic-flame"></span>
+      <span class="magic-flame"></span>
+    </div>
+  </div>
+
+  <p class="cake-instruction" id="cakeInstruction">
+    Ketuk kuenya buat tiup lilinnya
+  </p>
+
+</div>
+
+  <p class="subtitle">
+    Semoga kamu suka yaaa, Love You
+  </p>
+
+  <button class="next-button" data-next="page-choose">
+    LET'S GO ↗
+  </button>
+
+</section>
+
+
+
+    <!-- HALAMAN 3: CHOOSE THE SURPRISE -->
+    <section class="page" id="page-choose">
+
+      <div class="script-title">Choose the Surprise</div>
+
+      <div class="surprise-options">
+
+        <button class="surprise-option" data-next="page-gallery">
+          <span class="object">
+            <img src="assets/camera.png" alt="Memories">
+          </span>
+          <span>Memories</span>
+        </button>
+
+        <button class="surprise-option" data-next="page-letter">
+          <span class="object">
+            <img src="assets/letter.png" alt="A Letter">
+          </span>
+          <span>A Letter</span>
+        </button>
+
+        <button class="surprise-option" data-next="page-music">
+          <span class="object">
+            <img src="assets/music.png" alt="Our Song">
+          </span>
+          <span>Our Song</span>
+        </button>
+
+        <button class="surprise-option" data-next="page-cupid">
+          <span class="object">
+            <img src="assets/gift.png" alt="Surprise">
+          </span>
+          <span>Surprise</span>
+        </button>
+
+      </div>
+
+      <p class="subtitle">Choose one and see what happens...</p>
+
+    </section>
+
+
+    <!-- HALAMAN 4: MEMORIES -->
+    <section class="page" id="page-gallery">
+
+      <div class="script-title small-title">
+        Our Little Memories
+      </div>
+
+      <div class="gallery">
+
+        <div class="polaroid tilt-a">
+          <div class="photo photo-a"></div>
+          <small>little moments</small>
+        </div>
+
+        <div class="polaroid tilt-b">
+          <div class="photo photo-b"></div>
+          <small>pretty smile</small>
+        </div>
+
+        <div class="polaroid tilt-c">
+          <div class="photo photo-c"></div>
+          <small>good days</small>
+        </div>
+
+        <div class="polaroid tilt-d">
+          <div class="photo photo-d"></div>
+          <small>my favorite</small>
+        </div>
+
+        <div class="polaroid tilt-e">
+          <div class="photo photo-e"></div>
+          <small>always</small>
+        </div>
+
+        <div class="polaroid tilt-f">
+          <div class="photo photo-f"></div>
+          <small>♡</small>
+        </div>
+
+      </div>
+
+      <div class="floating-decor decor-heart">♥</div>
+      <div class="floating-decor decor-flower">🌸</div>
+
+      <!-- BACK DI POSISI NEXT -->
+      <button class="back-bottom" data-next="page-choose">
+        BACK ↶
+      </button>
+
+    </section>
+
+
+    <!-- HALAMAN 5: A LETTER -->
+    <section class="page" id="page-letter">
+
+      <div class="letter-layout">
+
+        <div class="script-title name-title">
+          For You
+        </div>
+
+        <div class="letter-paper">
+
+          <p class="letter-greeting">My First Love!</p>
+
+          <p>
+            Happy Birthday Sayang, seseorang yang istimewa.
+            Semoga hari-harimu selalu dipenuhi hal baik,
+            tawa, dan orang-orang yang tulus menyayangimu.
+            Terima kasih udah menjadi dirimu sendiri.
+          </p>
+
+          <p>
+            Terima kasih juga udah mau jadi pacarku. 
+            Aku bersyukur Tuhan mempertemukan kita, dan 
+            semoga kita terus diberi kesempatan untuk saling
+            menjaga, melewati setiap dinamika hubungan ini 
+            dengan sabar, dan makin erat satu sama lain.
+          </p>
+
+          <p class="signature">♡from your love♡</p>
+
+        </div>
+
+        <div class="letter-rose">🌹</div>
+
+
+      </div>
+
+      <!-- BACK DI POSISI NEXT -->
+      <button class="back-bottom" data-next="page-choose">
+        BACK ↶
+      </button>
+
+    </section>
+
+
+    <!-- HALAMAN 6: OUR SONG -->
+    <section class="page" id="page-music">
+
+      <div class="script-title small-title">
+        A Song For You
+      </div>
+
+      <div class="music-layout">
+
+        <div class="video-card">
+
+          <div class="video-screen">
+            <span class="video-title">
+              A SONG<br>FOR YOU
+            </span>
+
+            <span class="play-symbol">▶</span>
+          </div>
+
+          <p>your special soundtrack ♡</p>
+
+        </div>
+
+        <div class="music-photos">
+
+          <div class="frame">
+            <div class="photo photo-a"></div>
+          </div>
+
+          <div class="frame">
+            <div class="photo photo-c"></div>
+          </div>
+
+          <div class="frame">
+            <div class="photo photo-d"></div>
+          </div>
+
+        </div>
+
+        <div class="music-notes">♫ ♪ ♬</div>
+
+      </div>
+
+      <p class="subtitle">
+        May this song remind you of today.
+      </p>
+
+      <!-- BACK DI POSISI NEXT -->
+      <button class="back-bottom" data-next="page-choose">
+        BACK ↶
+      </button>
+
+    </section>
+
+
+    <!-- HALAMAN 7: CUPID -->
+    <section class="page" id="page-cupid">
+
+      <div id="darkOverlay"></div>
+
+      <section id="shootingScene">
+
+        <div class="stars stars-one">
+          ✦　⋆　✧　⋆　✦
+        </div>
+
+        <div class="stars stars-two">
+          ⋆　✧　✦　⋆　✧
+        </div>
+
+        <!-- KARAKTER CUPID -->
+        <div id="cupid">
+
+          <div class="cupid-glow"></div>
+
+          <img
+            src="assets/cupid.png"
+            class="cupid-character"
+            id="cupidImage"
+            alt="Cupid"
+          >
+
+          <div class="bow" id="bow"></div>
+
+        </div>
+
+        <!-- PANAH -->
+        <div id="bowArrow" aria-hidden="true"></div>
+
+        <div id="flyingArrow" aria-hidden="true">➶</div>
+
+        <div id="arrowTrail"></div>
+
+        <!-- TARGET HATI -->
+        <div id="targetHeart">💗</div>
+
+        <div id="heartExplosion">💖</div>
+
+        <div id="heartParticles"></div>
+
+        <!-- PESAN AKHIR -->
+        <div id="finalMessage">
+
+          <p class="final-small">
+            
+          </p>
+
+          <div class="final-heart">💗</div>
+
+          <h2>
+            Kamu adalah bagian indah dari hariku.
+          </h2>
+
+          <p class="final-description">
+            Kalau panah Cupid bisa memilih satu hati,
+            semoga ia selalu menemukan jalan menuju hatimu. 💘
+          </p>
+
+          <div class="final-decoration">
+            ♡ ∞ ♡
+          </div>
+
+          <!-- KEMBALI KE CHOOSE THE SURPRISE -->
+          <button class="back-bottom" data-next="page-choose">
+            BACK ↶
+          </button>
+
+        </div>
+
+      </section>
+
+    </section>
+
+  </main>
+
+
+  <div class="toast" id="toast">
+    Tambahkan foto dan musikmu di folder assets 
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
